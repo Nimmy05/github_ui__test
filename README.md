@@ -34,7 +34,7 @@ Internet connection to access the mock gateway at http://www.github.com/
 Installation
 -------------------
 ****Clone this repository:
-git clone this repository
+git clone https://github.com/Nimmy05/github_ui__test
 cd lp_github_ui_automation_task
 ***Install dependencies:
 npm install
@@ -60,32 +60,10 @@ The test data is stored in respective config file in the format of JSON format.
 
 Project Structure
 --------------------
-/.github
-  /workflows
-    ci.yml             # GitHub actions workflow for CI
-/data
-  paymentData.json     # Test data for API tests
-/tests
-  cancelPaymentSimulation.spec.js
-  digitalWalletSimulation.spec.js
-  emailConfirmation.spec.js
-  expiredCardSimulation.spec.js
-  insufficientFundsSimulation.spec.js
-  invalidCardSimulation.spec.js
-  invalidCVVSimulation.spec.js
-  successSimulation.spec.js
- 
-/utils
-  logUtils.js           # Mask sensitive info
-  paymentApi.js         # API call logic with retry
-/.tmp
-  emailLog              # mock email confirmation of payment transaction
-package.json            # Node.js dependencies and scripts
-/playwright.config.js   # Playwright configuration file
-README.md               # Project documentation
+![Project Structure](/project_structure.png)
 
-*************************CI/CD Integration (GitHub Actions) ****************************************
------------------------------------------------------------------------------------------------------------
+****************CI/CD Integration (GitHub Actions) **************
+---------------------------------------------------------------------
 This project includes a GitHub Actions workflow that automatically runs the test suite on every push to the main branch or on pull requests targeting main.
 
 CI Workflow:

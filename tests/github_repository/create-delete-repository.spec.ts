@@ -7,7 +7,7 @@ import { byId } from 'utils/locators';
 import thisTestConfig from 'configs/create-delete-repository.config.spec'
 
 test.describe(`Automate the "creation and deletion" of a '${testData.headings.github}' '${testData.texts.repository}'`, () => {
-    test(`should create and delete '${testData.headings.github}' '${testData.texts.repository}' successfully`, async ({ page, createRepository: createRepoPage, deleteRepository: deleteRepoPage }) => {
+    test(`should 'Create' and 'Delete' '${testData.headings.github}' '${testData.texts.repository}' successfully`, async ({ page, createRepository: createRepoPage, deleteRepository: deleteRepoPage }) => {
         const { username } = readConstantCreds();
         const repositoryName: string = thisTestConfig.new_repository_name;
         const repositoryType: string = thisTestConfig.expected_repository_type;
