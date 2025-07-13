@@ -4,8 +4,9 @@ import { testData, timeout } from 'globalConfig/constants';
 import { writeEnvFile } from 'utils/envWriter';
 import { fillSignUpForm, selectOptionBySearchText } from 'utils/forms/formHandlers';
 import { getByClassContains, byButtonTextIs, byClass, byButtonContainsText } from 'utils/locators';
-import thisTestConfig from 'configs/githubSignupUtils.config';
 import { button } from 'utils/clickUtils';
+
+import thisTestConfig from 'configs/githubSignupUtils.config';
 
 export async function signupToGitHub(page: Page): Promise<void> {
   const signUp: string = testData.github_main_page_class_names.header_menus.sign_up;
