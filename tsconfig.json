@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",                            
+    "paths": {
+      "utils/*": ["utils/*"],                
+      "pages/*": ["pages/*"],                
+      "config/*": ["globalConfig/*"],        
+      "data/*": ["data/*"]                   
+    },
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+

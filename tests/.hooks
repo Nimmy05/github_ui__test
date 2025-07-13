@@ -1,0 +1,11 @@
+import { test } from '@playwright/test';
+import { LogoutUtils } from '../utils/logoutUtils';
+
+test.afterEach(async ({ page }) => {
+  const logoutUtils = new LogoutUtils(page);
+  try {
+    await logoutUtils.performLogout();
+  } catch (e) {
+    console.warn('Logout failed or already logged out:', e);
+  }
+});
